@@ -21,7 +21,7 @@
 <body>
   <main>
     <h1>MiniJudge Privacy Policy</h1>
-    <p>Effective September 11, 2026</p>
+    <p>Effective October 15, 2026</p>
     <p>MiniJudge lets you photograph your painted miniatures and receive a structured evaluation of your work. This policy explains what information we collect, how we use it, and the choices you have.</p>
 
     <h2>Information we collect</h2>
@@ -31,6 +31,8 @@
       <li>Onboarding answers used to personalize your experience.</li>
       <li>Purchase entitlement confirmations; payment details are handled by Apple and our purchase provider.</li>
       <li>Technical data such as device type, operating system version, and service logs used to operate the service and prevent abuse.</li>
+      <li>A random app-installation identifier used to limit repeated free onboarding scans. It is not a hardware or advertising identifier; the server stores a one-way hash.</li>
+      <li>A one-way hash of the network IP address used to detect bursts of repeated free onboarding scans. These hashed IP abuse-prevention events are retained for no more than 48 hours and are not used to locate or fingerprint hardware.</li>
     </ul>
 
     <h2>How we use information</h2>
@@ -40,7 +42,7 @@
     <p>Photos are transmitted securely to OpenAI for image analysis and processed to produce evaluations and annotations. Photos are not shared with other users or used for advertising. MiniJudge relies on Supabase for hosting, database, and authentication; RevenueCat for purchase processing; and OpenAI for image analysis. These providers process information as needed to deliver the service.</p>
 
     <h2>Storage, security, and retention</h2>
-    <p>Information is stored with infrastructure providers using encryption in transit and at rest. We take reasonable measures to protect data, but no method of transmission or storage can be guaranteed completely secure. Photos, evaluations, and Studio data are retained until you delete them. You can delete saved miniatures and permanently delete your account in My Studio.</p>
+    <p>Information is stored with infrastructure providers using encryption in transit and at rest. We take reasonable measures to protect data, but no method of transmission or storage can be guaranteed completely secure. Photos, evaluations, and Studio data are retained until you delete them. If you delete your account, a one-way hash of the random installation identifier and its free-scan-consumption record may be retained as needed to prevent repeated free-scan abuse; it cannot restore your account or subscription. Hashed network IP abuse-prevention events are retained for no more than 48 hours. You can delete saved miniatures and permanently delete your account in My Studio.</p>
 
     <h2>Your choices and rights</h2>
     <p>You may access, correct, or delete personal information. Contact us to request a copy of your data; account deletion is available in My Studio. You may stop further collection by deleting the app.</p>
